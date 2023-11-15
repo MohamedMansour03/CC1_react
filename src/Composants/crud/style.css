@@ -1,0 +1,90 @@
+
+.h{
+   margin: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    color: #ffcb61;
+ 
+ 
+  
+}
+
+
+table {
+    border-collapse:collapse;
+    color: #404040;
+    width: 80%;
+    margin: auto;
+    bottom: 30%;
+}
+
+th {
+    font-size: 16px;
+    border-bottom: 3px solid    #2bc48a;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+td {
+    font-weight: 500;
+    padding: 5px 30px;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+
+tr:nth-child(2n){
+    background-color: #f6f9f9;
+}
+tr:nth-child(2n) td {
+    border-bottom: 1px solid #e0e0e0;
+    border-top:  1px solid #e0e0e0;
+}
+
+
+
+label {
+   margin: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+
+input{
+    padding: 5px;
+    border: 1px solid    #2bc48a;
+    outline: 0;
+    margin-top: 2px;
+    margin: 5px;
+ 
+}
+input:focus{
+    border: 1px solid #ffcb61 ;
+}
+.ajouter{
+    margin-top: 25px;
+    background-color:#2bc48a !important;
+    border: 1px solid #2bc48a  ;
+    cursor: pointer;
+    color:  beige;
+    text-transform: uppercase;
+}
+.custom-button{
+
+border: none;
+background-color: transparent; 
+cursor: pointer;
+}
+
+
+img{
+    width: '18px'
+}
+  
+  
+  
+  
+  
