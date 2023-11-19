@@ -3,15 +3,15 @@
     width:  50px;
     display: flex;
     margin: 15px;
+    order: -1 !important;
 }
 
 .container-langs img {
-    margin-right: 10px; 
+    margin-right: 5px; 
 }
 .custom-container {
-    max-width: 650px !important; 
-    margin: 0 auto;
-    margin-bottom: 30%;
+    max-width: 500px !important; 
+    margin: 0 auto   !important;
   }
 
   @media screen and (max-width: 700px) {

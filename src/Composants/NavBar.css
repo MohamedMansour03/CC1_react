@@ -6,7 +6,7 @@
   .logo {
     font-weight: bold;
     font-family: 'Great Vibes', cursive;
-    font-size: 28px !important;
+    font-size: 20px !important;
     background: linear-gradient(to right, white, #ffcb61);
     -webkit-background-clip: text;
     background-clip: text;
@@ -18,8 +18,8 @@
   
   .l {
     color: white !important;
-    margin-right: 20px !important;
-    font-size: 18px !important;
+    margin-right: 10px !important;
+    font-size: 15px !important;
     font-family: 'Times New Roman', Times, serif;
     transition: color 0.9s ease, padding-bottom 0.9s ease-in-out, border-color 0.1s ease;
 }

@@ -81,9 +81,9 @@ input[type='button']:hover {
   background-color: #4caf50;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
   .c{
-    width: 30% !important;
+    width: 35% !important;
     margin-bottom: 10px;
   }
 
