@@ -59,9 +59,9 @@ function UsersList() {
         <img onClick={() => setLang('EN')} src={EnglishFlag} alt="English Flag" />
         <img onClick={() => setLang('ES')} src={SpanishFlag} alt="Spanish Flag" />
       </div>
-      <h1 className={`text-center ${isDarkMode ? 'text-light' : 'text-dark'}`}>
+      <h2 className={`text-center ${isDarkMode ? 'text-light' : 'text-dark'}`}>
         {data[lang].title}
-      </h1>
+      </h2>
       <form className="row gx-2">
         <div className="col-sm-12 col-md-6">
           <label className="col-form-label">Search :</label>
