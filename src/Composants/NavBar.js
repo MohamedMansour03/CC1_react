@@ -23,7 +23,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="btn-light" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link as={NavLink} to='/TP1' className='l'>TP1</Nav.Link>
+            <Nav.Link as={NavLink} to='/' className='l'>TP1</Nav.Link>
             <Nav.Link as={NavLink} to='/TP2' className='l'>TP2</Nav.Link>
             <Nav.Link as={NavLink} to='/TP3' className='l'>TP3</Nav.Link>
             <Nav.Link as={NavLink} to='/TP4' className='l'>TP4</Nav.Link>
