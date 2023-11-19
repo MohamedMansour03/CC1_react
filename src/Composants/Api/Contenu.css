@@ -1,0 +1,11 @@
+.container-langs{
+
+    width:  50px;
+    display: flex;
+    margin: 15px;
+}
+
+.container-langs img {
+    margin-right: 10px; 
+}
+

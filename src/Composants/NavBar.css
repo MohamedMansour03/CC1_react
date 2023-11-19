@@ -1,9 +1,12 @@
 
+.navbar{
+  background-color: rgb(47, 46, 46);
 
+}
   .logo {
     font-weight: bold;
     font-family: 'Great Vibes', cursive;
-    font-size: 30px !important;
+    font-size: 28px !important;
     background: linear-gradient(to right, white, #ffcb61);
     -webkit-background-clip: text;
     background-clip: text;
@@ -16,11 +19,20 @@
   .l {
     color: white !important;
     margin-right: 20px !important;
-    font-size: 20px !important;
-    transition: color  0.3s ease;
-  }
-  
-  .l:hover {
-    color:#ffcb61 !important;
-  }
+    font-size: 18px !important;
+    font-family: 'Times New Roman', Times, serif;
+    transition: color 0.9s ease, padding-bottom 0.9s ease-in-out, border-color 0.1s ease;
+}
+
+.l:hover {
+    padding-bottom: 15px;
+    border-bottom-color: #ffcb61 !important;
+    color: #ffcb61 !important;
+    border-bottom: 2px solid  #ffcb61 ;
+
+}
+.btn-light{
+background-color: #ffcb61 !important;
+}
+
   

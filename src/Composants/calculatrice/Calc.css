@@ -1,12 +1,12 @@
 
 
 .c {
-  width: 20% !important;
+  width: 18% !important;
   padding: 20px;
   background-color: black;
   border: 2px solid #000;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(27, 25, 25, 0.3);
+  box-shadow: 5px 4px 5px rgba(27, 25, 25, 0.3);
   text-align: center;
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -14,7 +14,9 @@
   margin: auto;
   margin-bottom: 40px;
   position: relative;
-  margin-top: 5%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+
 }
 
 .button {
@@ -81,7 +83,7 @@ input[type='button']:hover {
 
 @media (max-width: 800px) {
   .c{
-    width: 50% !important;
+    width: 40% !important;
   }
 
  
@@ -93,7 +95,7 @@ input[type='button']:hover {
     display: grid;
     grid-template-columns: repeat(4, minmax(1, 1fr));
     grid-auto-rows: minmax(90px, auto);
-    grid-gap: 6px;
+    grid-gap: 5px;
   }
 
 

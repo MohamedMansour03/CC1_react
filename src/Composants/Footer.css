@@ -1,0 +1,43 @@
+
+.custom-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px; 
+  background-color: rgb(20, 20, 20);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 1px;
+
+}
+
+.social-icon {
+  margin-right: 10px; 
+  cursor: pointer;
+  color: white; 
+}
+
+
+
+
+.Copyright {
+  margin-left: 20px;
+  color: white; 
+  font-size: 14px;
+  font-weight: bold; 
+  text-transform: uppercase;
+  margin: auto; 
+  text-align: center;
+ 
+}
+
+

@@ -1,11 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
+import './Contenu.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-const UsersList = () => {
+import { AppContext } from '../AppContext';
+import { Context } from '../ContexeLang';
+import FrenchFlag from './assets/france.svg'
+import SpanishFlag from './assets/spain.svg'
+import EnglishFlag from './assets/united-kingdom.svg'
+import data from './assets/data.js'; 
+function UsersList(){
   const [users, setUsers] = useState([]);
   const [searchInput, setSearchInput] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  const { isDarkMode} = useContext(AppContext);
+  const {lang ,setLang} = useContext(Context)
   const itemsPerPage = 5;
 
   const getUsers = () => {
@@ -29,13 +37,10 @@ const UsersList = () => {
   const displayUser = () => {
     let tempUser = users; 
     if (searchInput !== "") {
-      tempUser = tempUser.filter(
-        (user) =>
-          user.name.includes(searchInput) ||
-          user.id.toString().includes(searchInput)
+      tempUser = tempUser.filter((user) =>  user.name.includes(searchInput) 
+      || user.id.toString().includes(searchInput)
       );
     }
-  
     setUsers(tempUser);
   };
   
@@ -50,36 +55,30 @@ const UsersList = () => {
     setCurrentPage(currentPage + 1);
   };
   return (
-    <div className="container-fluid mx-auto w-75 my-3">
-      <h2 className="text-center">Users List</h2>
-      <form>
-        <div className="row g-3 align-items-center">
-          <div className="col-auto">
-            <label  className="col-form-label">Search</label>
-          </div>
-          <div className="col-auto">
-            <input
-              type="text"
-              id="search"
-              className="form-control"
-              onChange={handleSearch}
+    <div className="container mx-auto my-3">
+      <div className='container-langs'>
+          <img onClick={() => setLang('FR')} src={FrenchFlag} />
+          <img onClick={() => setLang('EN')} src={EnglishFlag} />
+          <img onClick={() => setLang('ES')} src={SpanishFlag} />
+      </div>
+     <h1 className={`text-center ${isDarkMode ? 'text-light' : 'text-dark'}`}>{data[lang].title}</h1>
+      <form className="row">
+        <div className="col-sm-6 col-md-4 col-lg-4">
+          <label className="col-form-label">Search :</label>
+          <div className="d-flex">
+            <input type="text" id="search"  className="form-control"
+              onChange={handleSearch} 
               value={searchInput}
             />
-          </div>
-          <div className="col-auto">
             <input
-              className="btn btn-dark mx-2"
-              type="submit"
-              value="Search"
+              className="btn btn-dark mx-2"  type="submit"   value="Search"
               onClick={(e) => {
                 e.preventDefault();
                 displayUser();
               }}
             />
             <input
-              className="btn btn-secondary"
-              type="reset"
-              value="Reset"
+              className="btn btn-secondary"  type="reset"    value="Reset"
               onClick={() => {
                 setSearchInput("");
                 getUsers();
@@ -122,19 +121,4 @@ const UsersList = () => {
   );
 }
 
- 
-
 export default UsersList;
-
-
-
-
-/*
- 
-Dans la bibliothèque Axios, la propriété data de l'objet de réponse
-(généralement appelé response) contient les données renvoyées par
- le serveur en réponse à une requête HTTP. Cette propriété est spécifique à Axios 
-et est utilisée pour accéder aux données renvoyées par le serveur.
-
-
-*/
