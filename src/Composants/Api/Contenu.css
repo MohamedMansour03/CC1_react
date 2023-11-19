@@ -8,4 +8,18 @@
 .container-langs img {
     margin-right: 10px; 
 }
+.custom-container {
+    max-width: 650px !important; 
+    margin: 0 auto;
+    margin-bottom: 30%;
+  }
+
+  @media screen and (max-width: 700px) {
+    .custom-container {
+      width: auto;
+    }
+}
+
+  
+  
 

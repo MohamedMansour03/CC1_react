@@ -1,7 +1,7 @@
 
 
 .c {
-  width: 18% !important;
+  width: 14% !important;
   padding: 20px;
   background-color: black;
   border: 2px solid #000;
@@ -12,10 +12,10 @@
   font-size: 16px;
   align-items: center;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 20%;
   position: relative;
-  margin-top: 1%;
-  margin-bottom: 3%;
+  margin-top: 20px !important;
+  margin-bottom: 5px;
 
 }
 
@@ -81,9 +81,10 @@ input[type='button']:hover {
   background-color: #4caf50;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .c{
-    width: 40% !important;
+    width: 30% !important;
+    margin-bottom: 10px;
   }
 
  
